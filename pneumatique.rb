@@ -1,9 +1,10 @@
 require 'rubygems'
 require 'sinatra'
-require 'rack-flash'
+require 'rack/flash'
 require 'active_record'
 
 set :root, File.dirname(__FILE__)
+
 use Rack::Session::Cookie
 use Rack::Flash
 
