@@ -1,8 +1,9 @@
 set :application, "pneumatique"
-set :repository,  "git@github.com:buffpojken/pneumatique.git"
+set :repository,  "git://github.com/buffpojken/pneumatique.git"
 set :port, 34567
 set :user, "buffpojken"
 set :use_sudo, false
+default_run_options[:pty] = true
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
