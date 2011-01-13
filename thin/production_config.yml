@@ -1,0 +1,11 @@
+environment: production
+chdir: /sites/pneumatique/current/
+address: 127.0.0.1
+port: 8000
+pid: /sites/pneumatique/shared/tmp/thin.pid
+rackup: /sites/pneumatique/current/config.ru
+log: /sites/pneumatique/shared/log/thin.log
+max_conns: 1024
+timeout: 30
+max_persistent_conns: 512
+daemonize: true
