@@ -38,31 +38,31 @@
     
     <div id="main">
 			<a href="/en" style="display:block; float:right; margin-left:5px"><img src="/img/flags/png/gb.png" /> </a>
-			<a href="/" style="display:block; float:right"><img src="/img/flags/png/se.png" /></a>
+			<a href="/" style="display:block; float:right"><img src="/img/flags/png/se.png" /> </a>			
 			<img src="/img/logo.png" id="logotype" />
 			<br class="clear"/>
 			<div class="sections">				
 				<div class="section">
-					<p class="top">						
-					Pneumatique Electronique är en sprillans ny månadsklubb där det kommer att spelas dansant elektronisk musik på lördagskvällar från 21-02. Vi har ett par sköna residenta DJs och utöver det kommer vi boka gäst-DJs och gäst-artister. Ambitionen är att under en kväll minska glappet mellan många av de grymma elektroniska genrer som florerar där ute!
+					<p class="top">		
+						Pneumatique Electronique is here on a monthly basis to cater to your electronic music needs every third saturday night from 9pm to 2am. Using our resident DJs and guest DJs or guest acts we'll be playing danceable electronic music to you. Our ambition is to reduce the gap between the plethora of electronic genres available out there!					
 					</p>
 					<p>
-					Kolla här eller på <a href="http://facebook.com/pneumatique.electronique">Facebook</a> för mer info kring varje kväll!
+					Check out <a href="http://facebook.com/pneumatique.electronique">Facebook</a> for more information about every event!
 					</p>
 
 					<h4>Resident DJs</h4>
-					<strong>DJ Nephilim</strong> <br /><span class="genres">(Electronica / Rytmisk noise)</span><br /><br />
-					<strong>Itchy && Scratchy</strong><br /> <span class="genres">(Aggrotech / Electro / Hardstyle / House / Rytmisk noise)</span><br /><br />
-					<strong>DJ Kraken</strong> <br /><span class="genres">(Aggrotech / IDM / Rytmisk noise)</span><br /><br />
+					<strong>DJ Nephilim</strong> <br /><span class="genres">(Electronica / Rythmic noise)</span><br /><br />
+					<strong>Itchy && Scratchy</strong><br /> <span class="genres">(Aggrotech / Electro / Hardstyle / House / Rythmic noise)</span><br /><br />
+					<strong>DJ Kraken</strong> <br /><span class="genres">(Aggrotech / IDM / Rythmic noise)</span><br /><br />
 
-					<h4>Lokal</h4>
+					<h4>Venue</h4>
 
-					Lokalen vi håller till i är <a href="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&ll=59.337348,18.068055&spn=0.000823,0.002162&z=19&msid=217493271585070594568.0004992ec2a246626c561">Nalens klubblokal</a> på David Bagares gata, helt nyrenoverad för 2011!
+					Our venue is <a href="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&ll=59.337348,18.068055&spn=0.000823,0.002162&z=19&msid=217493271585070594568.0004992ec2a246626c561">Nalen Klubb</a> at David Bagares gata, completely refurbished for 2011!
 					<br /><br />
 
-					<h4>Mailinglista</h4>
-					<p>Lägg till din email för att få de senaste nyheterna. Vi kommer självklart aldrig sälja eller
-						distribuera din email vidare, vi hatar spam lika mycket som du.</p>
+					<h4>The List</h4>
+					<p>Add your email to our list to get the latest info and news. <br />Of course, we'll <b>never</b>
+						sell or distribute your email to someone.</p>
 					<form action="/email" method="POST">
 						<input type="text" name="email" />
 						<input type="submit" value="save">
@@ -70,17 +70,15 @@
 				</div>
 				
 				<div class="section">
-					<h3>Nästa Klubb - 19 feb</h3>
-					<p>Premiär för nya månadsklubben Pneumatique Electronique! <br />Vi kickar igång på riktigt
-						för att bjuda Stockholm på det bästa inom dansant elektronisk musik - från rytmisk noise och aggrotech till
-						hardstyle, EBM, IDM och electro.
+					<h3>Next Event - 19 feb</h3>
+					<p>Premiering on the 19th of february is the new monthly recurring club Pneumatique Electronique! We'll enter the Stockholm club stage, playing danceable electronic music with the ambition to reduce the gap between the plethora of electronic genres available out there!
 <br /><br />
-					Tid: 21-02<br />
-					Plats: <a href="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&ll=59.337348,18.068055&spn=0.000823,0.002162&z=19&msid=217493271585070594568.0004992ec2a246626c561">Nalens klubblokal</a>
+					When: 21-02<br />
+					Venue: <a href="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&ll=59.337348,18.068055&spn=0.000823,0.002162&z=19&msid=217493271585070594568.0004992ec2a246626c561">Nalens klubblokal</a>
 <br /><br />
 					Lineup:<br />
 					- Residents<br />
-					+ 2 grymma DJs TBA<br />
+					+ 2 great DJs TBA<br />
 <br />
 					Visuals:<br />
 					- Kinski
@@ -97,29 +95,15 @@
 			
 			<div class="sections no-top">				
 				<div class="section">
-					<h3>Vad spelar vi?</h3>
-					<p>Exempel på vad vi spelar:</p>
+					<h3>What do we play?</h3>
+					<p>Some random examples:</p>
 					<% if @rand == 1%>					
 					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/mPTpP2N1giU" frameborder="0"></iframe>
 					<% elsif @rand == 2 %>
 					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/HBjDZMJUduo" frameborder="0"></iframe>
-					<% elsif @rand == 3 %>
+					<% else %>
 					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/cQ13rTa8aYQ" frameborder="0"></iframe>
-					<% elsif @rand == 4%>
-					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/N8Zeu08luWo" frameborder="0"></iframe>
-					<% elsif @rand == 5 %>
-					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/Ztwdffq-HZg" frameborder="0"></iframe>
-					<% elsif @rand == 6 %>
-					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/1j-2KKLWng0" frameborder="0"></iframe>
-					<% elsif @rand == 7%>					
-					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/TlLWFa1b1Bc" frameborder="0"></iframe>
-					<% elsif @rand == 8 %>
-					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/vwJSd0R_t84" frameborder="0"></iframe>
-					<% elsif @rand == 9 %>
-					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/kS3rPUvcVA0" frameborder="0"></iframe>					
-					<% else %>						
-<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/fwimLp4qgSw" frameborder="0"></iframe>					
-<% end %>
+					<% end %>
 					
 				</div>
 				<br class="clear"/>

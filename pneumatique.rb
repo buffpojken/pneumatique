@@ -1,9 +1,10 @@
 require 'rubygems'
 require 'sinatra'
-require 'rack/flash'
+require 'rack-flash'
 require 'active_record'
 
 set :root, File.dirname(__FILE__)
+set :public, File.dirname(__FILE__)+"/public"
 
 use Rack::Session::Cookie
 use Rack::Flash
@@ -18,10 +19,14 @@ class Email < ActiveRecord::Base
 end
 
 get '/' do 
-  @rand = rand(3)
+  @rand = rand(9)
   erb :index
 end
 
+get '/en' do 
+  @rand = rand(9)
+  erb :en_index
+end
 
 post '/email' do 
   puts params.inspect
