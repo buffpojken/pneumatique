@@ -99,27 +99,48 @@
 				<div class="section">
 					<h3>Vad spelar vi?</h3>
 					<p>Exempel på vad vi spelar:</p>
-					<% if @rand == 1%>					
+
+					<!-- Roger Rotor - Codeine -->
+					<% if @rand == 0 %>
 					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/mPTpP2N1giU" frameborder="0"></iframe>
-					<% elsif @rand == 2 %>
+
+					<!-- Laserkraft 3D - Nein Mann (official video) -->
+					<% elsif @rand == 1 %>
 					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/HBjDZMJUduo" frameborder="0"></iframe>
-					<% elsif @rand == 3 %>
+
+					<!-- XMH - Cryogenic Fire (Noxvox remix by Soman) -->
+					<% elsif @rand == 2 %>
 					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/cQ13rTa8aYQ" frameborder="0"></iframe>
-					<% elsif @rand == 4%>
+
+					<!-- Prometheus Burning - Some Things Are Meant To Stay Broken -->
+					<% elsif @rand == 3 %>
 					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/N8Zeu08luWo" frameborder="0"></iframe>
-					<% elsif @rand == 5 %>
+
+					<!-- Schwefelgelb - Alle Sterne -->
+					<% elsif @rand == 4 %>
 					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/Ztwdffq-HZg" frameborder="0"></iframe>
-					<% elsif @rand == 6 %>
+
+					<!-- The Knife - Silent Shout --> 
+					<% elsif @rand == 5 %>
 					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/1j-2KKLWng0" frameborder="0"></iframe>
-					<% elsif @rand == 7%>					
+
+					<!-- Underworld - Born Slippy -->
+					<% elsif @rand == 6 %>					
 					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/TlLWFa1b1Bc" frameborder="0"></iframe>
-					<% elsif @rand == 8 %>
+
+					<!-- Benny Benassi - Love Is Gonna Save Us -->
+					<% elsif @rand == 7 %>
 					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/vwJSd0R_t84" frameborder="0"></iframe>
-					<% elsif @rand == 9 %>
-					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/kS3rPUvcVA0" frameborder="0"></iframe>					
-					<% else %>						
-<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/fwimLp4qgSw" frameborder="0"></iframe>					
-<% end %>
+					
+					<!-- Jekyll & Hyde - Freefall -->
+					<% elsif @rand == 8 %>
+					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/kS3rPUvcVA0" frameborder="0"></iframe>	
+					
+					<!-- The PCP Principle - Unholy -->
+					<% elsif @rand == 9 %>						
+					<iframe title="YouTube video player" class="youtube-player" type="text/html" width="750" height="390" src="http://www.youtube.com/embed/fwimLp4qgSw" frameborder="0"></iframe>					
+					
+					<% end %>
 					
 				</div>
 				<br class="clear"/>
