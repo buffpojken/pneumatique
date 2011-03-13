@@ -19,12 +19,12 @@ class Email < ActiveRecord::Base
 end
 
 get '/' do 
-  @rand = rand(15)
+  @rand = rand(16)
   erb :index
 end
 
 get '/en' do 
-  @rand = rand(15)
+  @rand = rand(16)
   erb :en_index
 end
 
