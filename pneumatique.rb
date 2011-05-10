@@ -1,7 +1,7 @@
 require 'rubygems'
+require 'activerecord'
 require 'sinatra'
 require 'rack-flash'
-require 'activerecord'
 
 set :root, File.dirname(__FILE__)
 set :public, File.dirname(__FILE__)+"/public"
