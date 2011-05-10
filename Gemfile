@@ -2,4 +2,4 @@ source :rubygems
 
 gem 'sinatra', '1.1.0'
 gem 'rack-flash'
-gem 'active_record'
+gem 'activerecord', :require => "active_record"
