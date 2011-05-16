@@ -28,6 +28,10 @@ get '/en' do
   erb :en_index
 end
 
+get '/download' do
+	erb :download_index
+end
+
 post '/email' do 
   puts params.inspect
   email = Email.new(:email => params["email"])
