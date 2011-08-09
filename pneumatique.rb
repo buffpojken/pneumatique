@@ -32,6 +32,10 @@ get '/download' do
 	erb :download_index
 end
 
+get '/club-event' do
+	erb :club_event
+end
+
 post '/email' do 
   puts params.inspect
   email = Email.new(:email => params["email"])
