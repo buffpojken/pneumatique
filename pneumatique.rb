@@ -48,6 +48,22 @@ get '/adrenalin-event' do
 	erb :adrenalin_event
 end
 
+get '/adrenalin-club' do
+	erb :adrenalin_club
+end
+
+get '/alternight-club' do
+	erb :alternight_club
+end
+
+get '/laserdisko-club' do
+	erb :laserdisko_club
+end
+
+get '/pe-club' do
+	erb :pe_club
+end
+
 post '/email' do 
   puts params.inspect
   email = Email.new(:email => params["email"])
